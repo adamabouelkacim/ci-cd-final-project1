@@ -1,0 +1,6 @@
+- name: cleanup
+  steps:
+    - name: delete-temp-files
+      image: alpine
+      script: |
+        rm -rf /tmp/*
