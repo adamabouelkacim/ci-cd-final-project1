@@ -4,3 +4,10 @@
       image: alpine
       script: |
         rm -rf /tmp/*
+- name: run-tests
+  steps:
+    - name: execute-tests
+      image: python:3.8
+      script: |
+        pip install nose2
+        nose2
